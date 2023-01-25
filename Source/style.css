@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    font-family: "Times New Roman";
+}
+
+i{
+    cursor: pointer; /**When the cursor is on the icon, pointer**/
+}/**The effect of the icon**/
+
+a{
+    text-decoration: none;
+    color: white;
+}
+/**
+*! Navbar Styles are here
+**/
+.navbar{
+    display:flex;
+    flex-direction: row; /*column*/
+    justify-content:space-between;
+    background-color: #e2afff;
+    color: white;
+    padding: 25px 60px;
+}
+
+.cart{
+    position: relative;
+    background-color: #e2afff;
+    color: white;
+    font-size: 30px;
+    padding: 0.5px; /*Phan vien*/
+    border-radius: 4px; /*Bo goc*/
+}
+
+.cartamount{
+    position: absolute;
+    top: -3px;/*negative: up; positive: down*/
+    right: -3px;
+    font-size: 15px;
+    background-color: red;
+    color: white;
+    padding: 0.5px;
+    border-radius:4px;
+}
+/**
+*!Shop Item Styles
+**/
+.shop{
+    display: grid;
+    grid-template-columns: repeat(4,  223px); /*times, width*/
+    gap: 30px;
+    justify-content:center;
+    padding: 10px;
+}
+@media (max-width: 1000px){
+   .shop{
+       grid-template-columns: repeat(2, 223px);
+   } 
+}
+@media (max-width: 500px){
+    .shop{
+        grid-template-columns: repeat(1, 223px);
+    } 
+ }
+.item{
+    border: 1px solid #e2afff;
+    border-radius: 6px;
+}
+
+.detail{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.price-quantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    font-size: 20px;
+}
+
+.bi-dash-circle{
+    color: grey;
+}
+
+.bi-plus-circle{
+    color: purple;
+}
+
+
+/**
+*!Style rules for label and buttons
+**/
+.text-center{
+    text-align:center;
+    margin-bottom: 20px; /**Gap between the label and shoppingcart**/
+}
+
+.home{
+    background-color: #e2afff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px;
+    cursor: pointer;
+    margin-top:10px;/**Gap between the button with the Empty**/
+}
+
+
+
+

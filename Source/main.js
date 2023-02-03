@@ -55,7 +55,7 @@ let increasing = (id) => {
 };
 
 let decreasing = (id) => {
-    let selectedItem = id;//!Check this one
+    let selectedItem = id;
     let search = basket.find((x)=>x.id ===  selectedItem)//Check all the objects one by one
 
     if(search === undefined)//at the beginning, no action when pressing the minus
@@ -67,11 +67,9 @@ let decreasing = (id) => {
         search.item -=1;
     }
     
-    
     updating(selectedItem);
 
     basket=basket.filter((x) => x.item !== 0);//filter to keep the item above one
-
     localStorage.setItem("data", JSON.stringify(basket));//set up a local storage named data
 
 };

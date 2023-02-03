@@ -14,7 +14,7 @@ i{
 a{
     text-decoration: none;
     color: white;
-}
+}/**used for a (link)**/
 /**
 *! Navbar Styles are here
 **/
@@ -102,7 +102,7 @@ a{
 
 
 /**
-*!Style rules for label and buttons
+* ! Style rules for label and buttons
 **/
 .text-center{
     text-align:center;
